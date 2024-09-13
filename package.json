@@ -1,0 +1,15 @@
+{
+  "name": "sixth-backend-node",
+  "version": "1.0.0",
+  "description": "Simple back-end on Pure Node.js",
+  "keywords": [
+    "Back-end",
+    "Node.js",
+    "JS"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

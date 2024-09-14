@@ -18,6 +18,13 @@ const { HOSTNAME, PORT } = process.env
  * - Если переданы какие-либо другие параметры, то пустой ответ, код ответа 500
  */
 
+function doGreetingWorld(response) {
+  response.setHeader("Content-Type", "text/html; charset=utf-8")
+  response.statusCode = 200
+  response.write("Hello, <b>the strange world</b>, and <i>bye</i>.")
+  response.end()
+}
+
 function doGreetingWithName(response, value) {
   response.setHeader("Content-Type", "text/html; charset=utf-8")
 
@@ -51,6 +58,8 @@ const server = http.createServer((request, response) => {
     doGreetingWithName(response, url.searchParams.get("hello"))
   else if (url.searchParams.has("users"))
     doReturnUsersJSON(response)
+  else if (!url.searchParams.size && request.url === "/")
+    doGreetingWorld(response)
   else
     doError(response)
 })

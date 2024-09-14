@@ -1,0 +1,60 @@
+{
+  "message": "You may see not exactly users. There is something else...",
+  "source": "https://maxchristmas-store.ru/articles/dedy_morozy/",
+  "data": [
+    {
+      "id": 1,
+      "name": "Father Frost",
+      "countries": ["Belarus", "Bosnia and Herzegovina", "Bulgaria", "Croatia", "Czech Republic", "Georgia", "Hungary", "Kosovo", "Montenegro", "Poland", "Russian Federation", "Serbia", "Slovenia", "Ukraine", "Uzbekistan"],
+      "sex": "male"
+    },
+    {
+      "id": 2,
+      "name": "Santa Klaus",
+      "countries": null,
+      "sex": "male"
+    },
+    {
+      "id": 3,
+      "name": "Olentzero",
+      "countries": ["France", "Spain"],
+      "sex": "male"
+    },
+    {
+      "id": 4,
+      "name": "Joulupukki",
+      "countries": ["Finland"],
+      "sex": null
+    },
+    {
+      "id": 5,
+      "name": "Apalpador",
+      "countries": ["Spain"],
+      "sex": "male"
+    },
+    {
+      "id": 6,
+      "name": "Goosaleh",
+      "countries": ["Ghana", "Iraq", "South Africa"],
+      "sex": null
+    },
+    {
+      "id": 7,
+      "name": "Reyes Magos",
+      "countries": ["Spain", "Venezuela"],
+      "sex": "male"
+    },
+    {
+      "id": 8,
+      "name": "Mama Tinga Tinga",
+      "countries": ["Cameroon"],
+      "sex": "female"
+    },
+    {
+      "id": 9,
+      "name": "La Befana",
+      "countries": ["Italia"],
+      "sex": "female"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import * as dotenv from "dotenv"
 import * as http from "node:http"
 
+import favicon from "./modules/icon.js"
 import getUsers from "./modules/users.js"
 import getGreeting from "./modules/greeting.js"
 
@@ -52,6 +53,14 @@ function doError(response) {
 }
 
 const server = http.createServer((request, response) => {
+  if (request.url === "/favicon.ico") {
+    favicon(request, response, () => {
+      response.statusCode = 404;
+      response.end("oops")
+    })
+    return
+  }
+
   const url = new URL(request.url, `http://${HOSTNAME}:${PORT}`)
 
   if (url.searchParams.has("hello"))
